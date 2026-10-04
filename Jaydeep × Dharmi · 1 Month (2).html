@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jaydeep × Dharmi · 1 Month</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,600&family=Caveat:wght@500&family=Outfit:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#140a1f;--bg2:#220d2c;--rose:#ff6b8b;--lilac:#b48cff;--blush:#ffd9e2;--text:#f4e9f1;--muted:#b9a3b8;
+--serif:'Cormorant Garamond',Georgia,serif;--hand:'Caveat','Segoe Script',cursive;--sans:'Outfit',system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#140a1f}}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:radial-gradient(ellipse at 20% 0,#2e1239 0,var(--bg) 55%) fixed;color:var(--text);font-family:var(--sans);font-weight:300;line-height:1.7;overflow-x:hidden}
+section{position:relative;z-index:1;padding:90px 22px;max-width:760px;margin:0 auto;text-align:center}
+h2{font-family:var(--serif);font-weight:500;font-style:italic;font-size:clamp(2rem,7vw,3rem);margin:0 0 .4em;color:var(--blush);text-shadow:0 0 28px rgba(255,107,139,.45)}
+.sub{color:var(--muted);margin:0 0 36px}
+.bg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;
+background-image:radial-gradient(1.5px 1.5px at 12% 20%,#fff8,transparent),radial-gradient(1px 1px at 70% 12%,#fff9,transparent),radial-gradient(1.5px 1.5px at 40% 70%,#fff7,transparent),radial-gradient(1px 1px at 88% 60%,#fff8,transparent),radial-gradient(1px 1px at 25% 90%,#fff6,transparent);animation:tw 6s ease-in-out infinite alternate}
+@keyframes tw{to{opacity:.55}}
+.bg i{position:absolute;bottom:-40px;color:var(--rose);opacity:0;font-style:normal;animation:fl linear infinite}
+@keyframes fl{0%{transform:translateY(0) rotate(0);opacity:0}10%{opacity:.5}100%{transform:translateY(-110vh) rotate(40deg);opacity:0}}
+.btn{font:inherit;font-size:1rem;color:#fff;border:0;border-radius:99px;padding:15px 34px;cursor:pointer;background:linear-gradient(135deg,var(--rose),#b05cff);box-shadow:0 0 24px rgba(255,107,139,.55);animation:pulse 2.6s ease-in-out infinite}
+.btn:focus-visible,.card:focus-visible,.pol:focus-visible,.opt:focus-visible{outline:2px solid var(--blush);outline-offset:3px}
+@keyframes pulse{50%{box-shadow:0 0 44px rgba(255,107,139,.9)}}
+.music{position:fixed;right:14px;top:calc(14px + env(safe-area-inset-top,0px));z-index:50;width:44px;height:44px;border-radius:50%;border:1px solid #ffffff30;background:#140a1fcc;color:var(--blush);font-size:1.1rem;cursor:pointer}
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px}
+.hero .for{font-family:var(--hand);font-size:1.5rem;color:var(--blush);animation:in 2s both}
+.hero h1{font-family:var(--serif);font-style:italic;font-weight:600;font-size:clamp(3rem,15vw,6rem);line-height:1.05;margin:10px 0;text-shadow:0 0 40px rgba(255,107,139,.6);animation:in 2.4s .6s both}
+.hero .tag{font-family:var(--serif);font-size:1.35rem;margin:6px 0 26px;animation:in 2.4s 1.4s both}
+.hero .btn,.hero .date{animation-name:in;animation-duration:2s;animation-delay:2.2s;animation-fill-mode:both}
+.hero .btn{animation:in 2s 2.2s both,pulse 2.6s 4s ease-in-out infinite}
+.date{margin-top:34px;letter-spacing:.35em;color:var(--lilac)}.date small{display:block;letter-spacing:0;font-family:var(--hand);font-size:1.2rem;color:var(--muted)}
+@keyframes in{from{opacity:0;transform:translateY(14px);filter:blur(6px)}}
+.rv{opacity:0;transform:translateY(26px);transition:all 1s}.rv.on{opacity:1;transform:none}
+.tl{position:relative;text-align:left;padding-left:34px;border-left:1px solid #ff6b8b66;margin-left:10px}
+.tl div{margin-bottom:46px;position:relative}.tl div:before{content:"";position:absolute;left:-40px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--rose);box-shadow:0 0 14px var(--rose)}
+.tl b{font-family:var(--serif);font-size:1.6rem;font-style:italic;color:var(--blush);font-weight:500}.tl p{margin:2px 0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.mem{background:#ffffff0c;border:1px solid #ffffff16;border-radius:18px;overflow:hidden;text-align:left}
+.mem img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}.mem p{margin:0;padding:10px 12px 14px;font-size:.92rem}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:22px 16px}
+@media(min-width:620px){.gal{grid-template-columns:repeat(3,1fr)}}
+.pol{background:#fdf6f0;padding:9px 9px 6px;border:0;cursor:pointer;box-shadow:0 10px 28px #0008;transform:rotate(var(--r));transition:transform .3s;font-family:var(--hand);font-size:1.25rem;color:#3a2236}
+.pol:hover{transform:rotate(0) scale(1.04)}.pol img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.lb{position:fixed;inset:0;z-index:80;background:#0a0410ee;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;animation:in .4s;cursor:pointer}
+.lb img{max-width:100%;max-height:70vh;border:10px solid #fdf6f0;border-bottom-width:34px;border-radius:3px}.lb p{font-family:var(--hand);font-size:1.6rem;margin:14px 0 0;color:var(--blush)}
+.letter{background:linear-gradient(#fff6ee,#f6e4d8);color:#4a2a3c;text-align:left;border-radius:6px;padding:34px 26px;box-shadow:0 0 50px rgba(255,107,139,.3);font-family:var(--hand);font-size:1.45rem;line-height:1.55}
+.letter p{margin:0 0 14px}.letter .end{text-align:center;font-size:1.8rem;color:#c2305c;margin-top:24px}
+.flip{perspective:800px}.card{position:relative;height:130px;border-radius:18px;cursor:pointer;border:0;padding:0;background:none;font:inherit;color:inherit}
+.card>span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:12px;border-radius:18px;backface-visibility:hidden;transition:transform .7s;font-size:.95rem}
+.card .f{background:linear-gradient(135deg,#3a1646,#5a1f4a);border:1px solid #ff6b8b55;font-family:var(--serif);font-style:italic;font-size:1.2rem}
+.card .b{background:linear-gradient(135deg,var(--rose),#a95cff);transform:rotateY(180deg)}.card.o .f{transform:rotateY(180deg)}.card.o .b{transform:none}
+.qz{background:#ffffff0c;border:1px solid #ffffff18;border-radius:20px;padding:26px 18px}.qz h3{font-family:var(--serif);font-size:1.7rem;font-weight:500;margin:0 0 18px}
+.opt{display:block;width:100%;margin:8px 0;padding:13px;border-radius:14px;border:1px solid #ff6b8b66;background:none;color:var(--text);font:inherit;cursor:pointer}.opt:hover{background:#ff6b8b22}
+.bar{height:4px;background:#ffffff18;border-radius:9px;margin-bottom:20px}.bar i{display:block;height:100%;background:var(--rose);border-radius:9px;transition:width .4s}
+.book{perspective:1200px;margin:0 auto 30px;width:min(86vw,340px);height:230px;position:relative}
+.book .pg{position:absolute;inset:0;border-radius:6px 14px 14px 6px;padding:26px 20px;display:flex;flex-direction:column;justify-content:center;font-family:var(--serif);font-style:italic;font-size:1.5rem;transform-origin:left;transition:transform 1.3s}
+.pg.p0{background:linear-gradient(135deg,#7a1f4c,#4a1450);box-shadow:0 0 40px rgba(255,107,139,.45);z-index:3;border-left:8px solid #ff6b8b}
+.pg.p1{background:#fbeee6;color:#5a2442;z-index:2}.book.open .p0{transform:rotateY(-150deg)}
+.ch{margin:0 0 14px;font-family:var(--serif);font-size:1.35rem;opacity:0;transition:opacity 1s}.ch.on{opacity:1}
+.fin{position:fixed;inset:0;z-index:90;background:radial-gradient(circle,#4a1450,#120818);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center;overflow:hidden;animation:in 1.2s}
+.fin h2{font-size:clamp(1.8rem,7vw,3rem);max-width:640px;opacity:0;animation:in 2.5s 1s forwards}.fin .a{font-family:var(--serif);font-size:2rem;opacity:0;animation:in 2s 4s forwards}.fin .c{font-family:var(--hand);font-size:2.4rem;color:var(--rose);opacity:0;animation:in 2s 6s forwards}
+.fin .x{position:absolute;top:calc(16px + env(safe-area-inset-top,0px));right:18px;background:none;border:0;color:#fff;font-size:1.8rem;cursor:pointer}
+footer{position:relative;z-index:1;padding:40px 20px 70px;text-align:center;color:var(--muted);font-size:.85rem}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-delay:0s!important;transition-duration:.01s!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/htm@3.1.1/dist/htm.js"></script>
+<script>
+/* ============ EDIT ME ============ */
+const CONFIG = {
+  him: "Jaydeep", her: "Dharmi",
+  dateText: "05 • 10 • 2026",
+  // Music: paste a direct link to an .mp3 (or a data/hosted file). Leave "" for none.
+  music: "",
+  days: [
+    {t:"Our first call",d:"Hours felt like minutes.",src:""},{t:"Random talks",d:"About everything and nothing.",src:""},
+    {t:"Silly moments",d:"Inside jokes only we get.",src:""},{t:"Laughing till it hurt",d:"The best kind of tired.",src:""},
+    {t:"Little things",d:"A 'good morning' that made my day.",src:""},{t:"Feeling at home",d:"In your voice, in your words.",src:""}
+  ],
+  letter: [
+    "11 years ago, I never thought that life would bring you back to me like this. ❤️",
+    "And now, somehow, it's already been one month since we became us.",
+    "This one month has made my days a little happier, my smiles a little bigger, and my life a little more special. I love our random talks, silly moments, and just having you by my side.",
+    "After 11 years, I found you again… and this time, I really don't want to let you go. ❤️",
+    "11 years apart, 1 month together, and hopefully a lifetime ahead. ❤️♾️"
+  ],
+  letterEnd: "Happy 1st month to us, Dharmi. 🫶🏻",
+  reasons: [
+    ["Your smile ❤️","It resets my whole day, every single time."],["Your voice","Hearing it feels like coming home."],
+    ["Your random talks","I'd listen to them for hours."],["The way you care","Quietly, completely, and so genuinely."],
+    ["Our silly moments","No one makes me laugh like this."],["The comfort I feel with you","I can just be me."],
+    ["You're simply you","And that's more than enough."],["And honestly… I could keep going forever. ❤️","Seriously. Forever."]
+  ],
+  quiz: [
+    ["Who fell first? 👀",["Jaydeep","Dharmi","Both, secretly"]],["Who texts first?",["Jaydeep","Dharmi","Whoever's bored"]],
+    ["Who is more dramatic?",["Jaydeep","Dharmi","Both, obviously"]],["Who says sorry first?",["Jaydeep","Dharmi","Nobody 😅"]],
+    ["Who gets hungry first?",["Jaydeep","Dharmi","At the same time"]],["Our favourite kind of evening?",["A long call","A long walk","Food + talking"]],
+    ["One thing we both want to do?",["Travel together","Watch the sunset","Everything!"]],["Who will cry at the wedding?",["Jaydeep","Dharmi","Everyone 😭"]]
+  ],
+  results: ["Honestly? Doesn't matter who's right. We've got 11 years of catching up and a lifetime to figure out every answer. ❤️",
+            "Every answer was right, because every answer is us. ❤️"]
+};
+/* ================================ */
+const {useState,useEffect,useRef}=React, html=htm.bind(React.createElement);
+const ph=(e,i)=>{const h=[330,285,350,270][i%4];return"data:image/svg+xml,"+encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='hsl(${h},70%,62%)'/><stop offset='1' stop-color='hsl(${h+40},60%,35%)'/></linearGradient></defs><rect width='200' height='200' fill='url(#g)'/><text x='100' y='118' font-size='64' text-anchor='middle'>${e}</text></svg>`)};
+const EM=["❤️","📸","🌙","☕","🌸","✨","🫶🏻","🎶"];
+function useReveal(){const r=useRef();useEffect(()=>{const o=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add("on")),{threshold:.15});r.current&&r.current.querySelectorAll(".rv").forEach(n=>o.observe(n));return()=>o.disconnect()},[]);return r}
+const Hearts=()=>html`<div class="bg" aria-hidden="true">${Array.from({length:16},(_,i)=>html`<i key=${i} style=${{left:(i*37%100)+"%",fontSize:(10+i*7%16)+"px",animationDuration:(12+i*5%11)+"s",animationDelay:-(i*3%12)+"s"}}>${i%3?"♥":"✦"}</i>`)}</div>`;
+function Music(){const a=useRef(),[on,set]=useState(false);
+  const t=()=>{if(!CONFIG.music){alert("Add your song link in CONFIG.music 🎶");return}on?a.current.pause():a.current.play().catch(()=>{});set(!on)};
+  return html`<div><${CONFIG.music?"audio":"span"} ref=${a} src=${CONFIG.music||undefined} loop></><button class="music" onClick=${t} aria-label="Toggle music">${on?"♪":"♫"}</button></div>`}
+const Hero=()=>html`<section class="hero" id="top">
+  <div class="for">For the girl who found her way back into my life… ❤️</div>
+  <h1>${CONFIG.him} × ${CONFIG.her}</h1>
+  <div class="tag">11 years apart.<br/>1 month together.<br/>And hopefully… a lifetime ahead. ♾️</div>
+  <button class="btn" onClick=${()=>document.getElementById("story").scrollIntoView({behavior:"smooth"})}>Our Story</button>
+  <div class="date">${CONFIG.dateText}<small>Our first little milestone ❤️</small></div></section>`;
+const Story=()=>{const r=useReveal();const s=[["11 Years Ago","We met, not knowing that life would bring us back to each other."],["11 Years Later","Somehow, after all those years, our paths crossed again."],["The Beginning","You said yes. ❤️"],["5 October 2026","Our first month together."]];
+  return html`<section id="story" ref=${r}><h2>Our Story</h2><p class="sub">Some stories take a while to find their next page.</p>
+  <div class="tl">${s.map(([a,b],i)=>html`<div class="rv" key=${i} style=${{transitionDelay:"0.1s"}}><b>${a}</b><p>${b}</p></div>`)}</div></section>`};
+const Days=()=>{const r=useReveal();return html`<section ref=${r}><h2>30 Days of Us ❤️</h2><p class="sub">The little things that made our first month ours.</p>
+  <div class="grid">${CONFIG.days.map((d,i)=>html`<div class="mem rv" key=${i}><img alt="" src=${d.src||ph(EM[i%8],i)}/><p><b>${d.t}</b><br/>${d.d}</p></div>`)}</div></section>`};
+const Letter=()=>{const r=useReveal();return html`<section ref=${r}><h2>A little something for you…</h2><br/>
+  <div class="letter">${CONFIG.letter.map((l,i)=>html`<p class="rv" key=${i}>${l}</p>`)}<div class="end rv">${CONFIG.letterEnd}</div></div></section>`};
+const Reasons=()=>{const [o,set]=useState({});return html`<section><h2>Reasons I Love You</h2><p class="sub">Tap a card. There's a little secret behind each one.</p>
+  <div class="grid flip">${CONFIG.reasons.map(([a,b],i)=>html`<button key=${i} class=${"card"+(o[i]?" o":"")} onClick=${()=>set({...o,[i]:!o[i]})}><span class="f">${a}</span><span class="b">${b}</span></button>`)}</div></section>`};
+const Quiz=()=>{const [i,set]=useState(0);const Q=CONFIG.quiz;
+  return html`<section><h2>How Well Do We Know Each Other?</h2><p class="sub">No wrong answers. Promise.</p>
+  <div class="qz"><div class="bar"><i style=${{width:(i/Q.length*100)+"%"}}></i></div>
+  ${i<Q.length?html`<h3>${Q[i][0]}</h3>${Q[i][1].map(o=>html`<button class="opt" key=${o} onClick=${()=>set(i+1)}>${o}</button>`)}`
+  :html`<h3>Result: 100% us 💞</h3><p>${CONFIG.results[0]}</p><button class="opt" onClick=${()=>set(0)}>Play again</button>`}</div></section>`};
+const Future=()=>{const [open,set]=useState(false);const r=useRef();
+  useEffect(()=>{const o=new IntersectionObserver(e=>e[0].isIntersecting&&set(true),{threshold:.5});o.observe(r.current);return()=>o.disconnect()},[]);
+  const ch=["Chapter 1 — The Beginning ❤️","Chapter 2 — More Memories","Chapter 3 — More Adventures","Chapter ∞ — Us"];
+  return html`<section><h2>And this is only Chapter 1…</h2><br/>
+  <div ref=${r} class=${"book"+(open?" open":"")}><div class="pg p1">${ch.map((c,i)=>html`<div key=${i} class=${"ch"+(open?" on":"")} style=${{transitionDelay:(1.2+i*.9)+"s"}}>${c}</div>`)}</div><div class="pg p0">${CONFIG.him} &amp; ${CONFIG.her}<br/><small style=${{fontSize:"1rem"}}>Chapter 1</small></div></div>
+  <p class="sub" style=${{fontFamily:"var(--serif)",fontStyle:"italic",fontSize:"1.3rem"}}>I don't know how the story unfolds, but I hope you're there in every chapter.</p></section>`};
+const Finale=()=>{const [on,set]=useState(false);
+  return html`<section style=${{paddingBottom:"60px"}}><button class="btn" onClick=${()=>set(true)}>One Last Thing… ❤️</button>
+  ${on&&html`<div class="fin"><button class="x" aria-label="Close" onClick=${()=>set(false)}>×</button>
+   ${Array.from({length:34},(_,i)=>html`<i key=${i} style=${{position:"absolute",bottom:"-40px",left:(i*29%100)+"%",fontStyle:"normal",color:i%2?"#ff6b8b":"#b48cff",fontSize:(16+i*9%30)+"px",animation:`fl ${5+i%6}s ${i%7*.5}s linear infinite`}}>♥</i>`)}
+   <h2>If I had to find you all over again,<br/>I'd choose you every single time.</h2>
+   <div class="a">Happy 1 Month, ${CONFIG.her}. ❤️</div><div class="c">I love you. ♾️</div></div>`}</section>`};
+const App=()=>html`<${React.Fragment}><${Hearts}/><${Music}/><${Hero}/><${Story}/><${Days}/><${Letter}/><${Reasons}/><${Quiz}/><${Future}/><${Finale}/>
+<footer>This isn't just a website. It's a tiny digital memory of our first month together. ❤️</footer></>`;
+ReactDOM.createRoot(document.getElementById("root")).render(html`<${App}/>`);
+</script>
+</body>
+</html>
